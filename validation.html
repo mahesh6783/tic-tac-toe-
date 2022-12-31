@@ -1,0 +1,30 @@
+<html>
+    <script>
+        function valid()
+        {
+            var b=document.a.t.value;
+             var email=/^([a-z0-9]+)@([a-z]+).([a-z]+)$/;
+            var result= email.test(b);
+             if(result==false)
+             {
+                alert("please enter valid email id");
+             }
+             else
+             {
+                alert("ok fine");
+             }
+             
+            
+        }
+             
+    </script>
+    <body>
+        <form name="a"  onsubmit="valid()">
+            <input type="text" name="t">
+            
+            
+
+            <input type="submit" >
+        </form>
+    </body>
+</html>
